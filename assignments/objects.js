@@ -105,38 +105,41 @@ console.log(intern[4].math(3,4));
 
 // Log the parent object's name
 
-// const parent = {
-//   'name': "Susan",
-//   'age': 70,
-//   speak: function(){
-//     return 'My name is ' + this.name;
-//   }
-//   child{
-//     'name': 'George',
-//     'age': 50,
-//     speak: function(){
-//     return 'My name is ' + this.name;
-//   },
+const parent = {
+  'name': "Susan",
+  'age': 70,
+  speak: function(){
+    return 'My name is ' + this.name;
+  }
+};
 
-//   grandchild{
-//     'name': 'George',
-//     'age': 50,
-//     speak: function(){
-//     return 'My name is ' + this.name;
-//   }
-// },
+const child = {
+    'name': 'George',
+    'age': 50,
+    speak: function(){
+    return 'My name is ' + this.name;
+  }
+};
+
+const grandchild = {
+    'name': 'George',
+    'age': 30,
+    speak: function(){
+    return 'My name is ' + this.name;
+  }
+};
 
 
 
 
 
 // // Log the child's age
-// console.log(parent.name)
+console.log(parent.name)
 // // Log the name and age of the grandchild
-// console.log(parent.child.age);
+console.log(grandchild.age);
 // // Have the parent speak
-// console.log(parent.child.grandchild.name, parent.child.granchild.age)
+console.log(parent.speak())
 // // Have the child speak
-// console.log(parent.child.speak());
+console.log(child.speak());
 // // Have the grandchild speak
-// console.log(parent.child.grandchild.speak());
+console.log(grandchild.speak());
